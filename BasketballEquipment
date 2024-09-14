@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class BasketballEquipment {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int annualFee = scanner.nextInt();
+
+        double shoesPrice = annualFee * 0.60;
+        double outfitPrice = shoesPrice * 0.80;
+        double ballPrice = outfitPrice * 0.25;
+        double accessoriesPrice = ballPrice * 0.20;
+
+        double totalCost = annualFee + shoesPrice + outfitPrice + ballPrice + accessoriesPrice;
+
+        System.out.printf("%.2f\n", totalCost);
+
+        scanner.close();
+    }
+}
